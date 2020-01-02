@@ -67,9 +67,30 @@ p{
   height: 160px;
 }
 .rotation {
-  transform: perspective( 600px ) rotateY( 180deg );
-  transition: transform .5s linear 0s;
+  transform: rotateY(180deg);
 }
+/* @keyframes rotation {
+  0%{
+
+  }
+  25%{
+    transform: rotateY(45deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  75% {
+    transform: rotateY(135deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+.rotation {
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-delay: linear;
+} */
 .bootstramp {
   background-image: url(../img/bootstrap.png);
 }
