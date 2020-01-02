@@ -38,24 +38,25 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-.container-cards {
-  width: 40%;
-  margin: auto;
+.container-cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  width: 40%;
+  margin: auto;
 }
-.back-cards {
-  background-image: url(../img/backface.JPG);
-  background-size: cover;
+.container-rotation {
   width: 23%;
-  height: 170px;
-  margin: 5px 0;
+  height: 160px;
+  margin:  5px 0;
+  background-color: red;
 }
-.rotation {
-  transform: perspective( 600px ) rotateY( 180deg );
-  transition: transform .5s linear 0s;
+.back.cards {
+  background-image: url(../img/backface.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .hidden {
   display: none;
