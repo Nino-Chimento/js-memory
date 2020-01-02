@@ -60,6 +60,27 @@ h2 {
 .bootstramp {
   background-image: url(../img/bootstrap.png);
 }
+.csharp {
+  background-image: url(../img/csharp.jpg);
+}
+.css3 {
+  background-image: url(../img/css3.png);
+}
+.html5 {
+  background-image: url(../img/html5.png);
+}
+.java {
+  background-image: url(../img/java.png);
+}
+.laravel {
+  background-image: url(../img/laravel.png);
+}
+.php {
+  background-image: url(../img/php.png);
+}
+.python {
+  background-image: url(../img/Python.png);
+}
 .order1 {
   order: 1;;
 }
