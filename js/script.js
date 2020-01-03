@@ -90,8 +90,7 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-      document.getElementById("card1").classList.add("rotation");
-      document.getElementById("card1").classList.remove("bootstramp");
+      console.log("card1");
     }
   }
 }
@@ -117,8 +116,33 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-      document.getElementById("card1").classList.add("rotation");
-      document.getElementById("card1").classList.remove("bootstramp");
+    console.log("card2");
+    }
+  }
+}
+);
+// carta3
+document.getElementById('card3').addEventListener("click",
+function(){
+  document.getElementById("card3").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card3").classList.add("bootstramp");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card3";
+  }
+  else {
+    if (primaScelta == "card4") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card4").classList.add("hidden");
+        document.getElementById("card3").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    console.log("card3");
     }
   }
 }
