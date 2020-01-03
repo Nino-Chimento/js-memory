@@ -90,7 +90,7 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-      console.log("card1");
+      document.getElementById('rigioca').classList.remove("hidden");
     }
   }
 }
@@ -116,7 +116,7 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-    console.log("card2");
+    document.getElementById('rigioca').classList.remove("hidden");
     }
   }
 }
@@ -142,7 +142,7 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-    console.log("card3");
+    document.getElementById('rigioca').classList.remove("hidden");
     }
   }
 }
@@ -168,7 +168,59 @@ function(){
       console.log(coppieTrovate);
     }
     else {
-    console.log("card4");
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
+// carta5
+document.getElementById('card5').addEventListener("click",
+function(){
+  document.getElementById("card5").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card5").classList.add("css3");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card5";
+  }
+  else {
+    if (primaScelta == "card6") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card5").classList.add("hidden");
+        document.getElementById("card6").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
+// carta 6
+document.getElementById('card6').addEventListener("click",
+function(){
+  document.getElementById("card6").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card6").classList.add("css3");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card6";
+  }
+  else {
+    if (primaScelta == "card5") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card6").classList.add("hidden");
+        document.getElementById("card5").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
     }
   }
 }
