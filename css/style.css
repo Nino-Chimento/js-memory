@@ -65,10 +65,13 @@ p{
   margin: 5px 0;
   width: 23%;
   height: 160px;
+  cursor: pointer;
 }
 .rotation {
-  transform: rotateY(180deg);
+  transform: perspective( 600px ) rotateY( 180deg );
+  transition: transform .5s linear 0s;
 }
+
 /* @keyframes rotation {
   0%{
 
@@ -93,27 +96,54 @@ p{
 } */
 .bootstramp {
   background-image: url(../img/bootstrap.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
 }
 .csharp {
   background-image: url(../img/csharp.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
 }
 .css3 {
   background-image: url(../img/css3.png);
+
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
 }
 .html5 {
   background-image: url(../img/html5.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 .java {
   background-image: url(../img/java.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 .laravel {
   background-image: url(../img/laravel.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 .php {
   background-image: url(../img/php.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 .python {
   background-image: url(../img/Python.png);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
 }
 .order1 {
   order: 1;;
