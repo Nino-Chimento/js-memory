@@ -17,6 +17,22 @@ function(){
   document.getElementById("card14").classList.remove("hidden");
   document.getElementById("card15").classList.remove("hidden");
   document.getElementById("card16").classList.remove("hidden");
+  document.getElementById('card1').classList.add("bootstramp");
+  document.getElementById("card2").classList.add("bootstramp");
+  document.getElementById("card3").classList.add("csharp");
+  document.getElementById("card4").classList.add("csharp");
+  document.getElementById("card5").classList.add("css3");
+  document.getElementById("card6").classList.add("css3");
+  document.getElementById("card7").classList.add("html5");
+  document.getElementById("card8").classList.add("html5");
+  document.getElementById("card9").classList.add("java");
+  document.getElementById("card10").classList.add("java");
+  document.getElementById("card11").classList.add("laravel");
+  document.getElementById("card12").classList.add("laravel");
+  document.getElementById("card13").classList.add("php");
+  document.getElementById("card14").classList.add("php");
+  document.getElementById("card15").classList.add("python");
+  document.getElementById("card16").classList.add("python");
 }
 )
 
