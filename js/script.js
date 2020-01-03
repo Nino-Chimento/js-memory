@@ -126,7 +126,7 @@ document.getElementById('card3').addEventListener("click",
 function(){
   document.getElementById("card3").classList.add("rotation","z-index");
   setTimeout(function () {
-    document.getElementById("card3").classList.add("bootstramp");
+    document.getElementById("card3").classList.add("csharp");
   }, 250);
   if (primaScelta =="") {
     primaScelta = "card3";
@@ -143,6 +143,32 @@ function(){
     }
     else {
     console.log("card3");
+    }
+  }
+}
+);
+// carta4
+document.getElementById('card4').addEventListener("click",
+function(){
+  document.getElementById("card4").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card4").classList.add("csharp");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card4";
+  }
+  else {
+    if (primaScelta == "card3") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card3").classList.add("hidden");
+        document.getElementById("card4").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    console.log("card4");
     }
   }
 }
