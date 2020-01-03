@@ -1,3 +1,24 @@
+document.getElementById('rigioca').addEventListener("click",
+function(){
+  document.getElementById('rigioca').classList.add("hidden");
+  document.getElementById('card1').classList.remove("hidden");
+  document.getElementById("card2").classList.remove("hidden");
+  document.getElementById("card3").classList.remove("hidden");
+  document.getElementById("card4").classList.remove("hidden");
+  document.getElementById("card5").classList.remove("hidden");
+  document.getElementById("card6").classList.remove("hidden");
+  document.getElementById("card7").classList.remove("hidden");
+  document.getElementById("card8").classList.remove("hidden");
+  document.getElementById("card9").classList.remove("hidden");
+  document.getElementById("card10").classList.remove("hidden");
+  document.getElementById("card11").classList.remove("hidden");
+  document.getElementById("card12").classList.remove("hidden");
+  document.getElementById("card13").classList.remove("hidden");
+  document.getElementById("card14").classList.remove("hidden");
+  document.getElementById("card15").classList.remove("hidden");
+  document.getElementById("card16").classList.remove("hidden");
+}
+)
 
 
 // mostro le carte al click start
@@ -67,7 +88,7 @@ setTimeout(function () {
 );
 // creo le if ed elif per le opzioni di ogni carta
 primaScelta = "";
-secondaScelta=" ";
+
 coppieTrovate = 0
 // carta 1
 document.getElementById('card1').addEventListener("click",
