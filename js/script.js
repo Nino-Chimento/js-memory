@@ -1,3 +1,4 @@
+// mostro le carte al click start
 document.getElementById('play').addEventListener("click",
 function(){
   document.getElementById("card1").classList.add("rotation");
@@ -34,5 +35,26 @@ function(){
     document.getElementById("card15").classList.add("python");
     document.getElementById("card16").classList.add("python");
   }, 200);
+  // giro le carte mostrate
+  setTimeout(function () {
+    document.getElementById('card1').classList.remove("bootstramp","rotation");
+    document.getElementById("card2").classList.remove("bootstramp","rotation");
+    document.getElementById("card3").classList.remove("csharp","rotation");
+    document.getElementById("card4").classList.remove("csharp","rotation");
+    document.getElementById("card5").classList.remove("css3","rotation");
+    document.getElementById("card6").classList.remove("css3","rotation");
+    document.getElementById("card7").classList.remove("html5","rotation");
+    document.getElementById("card8").classList.remove("html5","rotation");
+    document.getElementById("card9").classList.remove("java","rotation");
+    document.getElementById("card10").classList.remove("java","rotation");
+    document.getElementById("card11").classList.remove("laravel","rotation");
+    document.getElementById("card12").classList.remove("laravel","rotation");
+    document.getElementById("card13").classList.remove("php","rotation");
+    document.getElementById("card14").classList.remove("php","rotation");
+    document.getElementById("card15").classList.remove("python","rotation");
+    document.getElementById("card16").classList.remove("python","rotation");
+    document.getElementById('unclick').classList.add("hidden");
+  }, 10000);
+
 }
 )
