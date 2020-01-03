@@ -66,6 +66,36 @@ for (i=1; i<=16; i++) {
     document.getElementById("card16").classList.remove("python","rotation");
     document.getElementById('unclick').classList.add("hidden");
   }, 10000);
+}
+);
+// creo le if ed elif per le opzioni di ogni carta
+scelta = " ";
+coppieTrovate = 0
+// carta 1
+document.getElementById('card1').addEventListener("click",
+function(){
+    document.getElementById("card1").classList.add("rotation","z-index");
+    setTimeout(function () {
+        document.getElementById("card1").classList.add("bootstramp");
+    }, 250);
+    if (scelta =" ") {
+      scelta = bootstramp;
+    }
+    else if {
+      scelta = bootstramp;
+        if (scelta = bootstramp) {
+          document.getElementById('card1').classList.add("hidden");
+          coppieTrovate ++;
+            if (coppieTrovate = 8) {
+              document.getElementById('vittoria').innerHTML = "Complimenti hai finito il gioco";
+              document.getElementById('punteggio').classList.remove("hidden");
+            }
+            else {
+              document.getElementById('score').innerHTML = coppieTrovate;
+              document.getElementById("card1").classList.add("hidden");
+            }
+        }
+    }
 
 }
 )
