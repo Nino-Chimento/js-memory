@@ -62,7 +62,7 @@ setTimeout(function () {
   document.getElementById("card15").classList.remove("python","rotation");
   document.getElementById("card16").classList.remove("python","rotation");
   document.getElementById('unclick').classList.add("hidden");
-}, 1000);
+}, 5000);
 }
 );
 // creo le if ed elif per le opzioni di ogni carta
@@ -215,6 +215,58 @@ function(){
       setTimeout(function () {
         document.getElementById("card6").classList.add("hidden");
         document.getElementById("card5").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
+// carta7
+document.getElementById('card7').addEventListener("click",
+function(){
+  document.getElementById("card7").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card7").classList.add("html5");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card7";
+  }
+  else {
+    if (primaScelta == "card8") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card8").classList.add("hidden");
+        document.getElementById("card7").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
+// carta8
+document.getElementById('card8').addEventListener("click",
+function(){
+  document.getElementById("card8").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card8").classList.add("html5");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card8";
+  }
+  else {
+    if (primaScelta == "card7") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card7").classList.add("hidden");
+        document.getElementById("card8").classList.add("hidden");
       }, 1000);
       coppieTrovate ++;
       console.log(coppieTrovate);
