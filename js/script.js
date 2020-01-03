@@ -6,9 +6,11 @@ function(){
   var i;
 for (i=1; i<=16; i++) {
   carta = document.getElementById('card'+i);
-  console.log(carta);
+  // console.log(carta);
   ordine = Math.floor(Math.random() * 16 + 1);
   console.log(ordine);
+  carta.classList.add("order"+ ordine);
+  console.log(carta);
 }
   document.getElementById("card1").classList.add("rotation");
   document.getElementById("card2").classList.add("rotation");
