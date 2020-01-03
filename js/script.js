@@ -381,3 +381,55 @@ function(){
   }
 }
 );
+// carta13
+document.getElementById('card13').addEventListener("click",
+function(){
+  document.getElementById("card13").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card13").classList.add("php");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card13";
+  }
+  else {
+    if (primaScelta == "card14") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card13").classList.add("hidden");
+        document.getElementById("card14").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
+// carta14
+document.getElementById('card14').addEventListener("click",
+function(){
+  document.getElementById("card14").classList.add("rotation","z-index");
+  setTimeout(function () {
+    document.getElementById("card14").classList.add("php");
+  }, 250);
+  if (primaScelta =="") {
+    primaScelta = "card14";
+  }
+  else {
+    if (primaScelta == "card13") {
+      primaScelta = ""
+      setTimeout(function () {
+        document.getElementById("card13").classList.add("hidden");
+        document.getElementById("card14").classList.add("hidden");
+      }, 1000);
+      coppieTrovate ++;
+      console.log(coppieTrovate);
+    }
+    else {
+    document.getElementById('rigioca').classList.remove("hidden");
+    }
+  }
+}
+);
