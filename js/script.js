@@ -1,6 +1,15 @@
+
+
 // mostro le carte al click start
 document.getElementById('play').addEventListener("click",
 function(){
+  var i;
+for (i=1; i<=16; i++) {
+  carta = document.getElementById('card'+i);
+  console.log(carta);
+  ordine = Math.floor(Math.random() * 16 + 1);
+  console.log(ordine);
+}
   document.getElementById("card1").classList.add("rotation");
   document.getElementById("card2").classList.add("rotation");
   document.getElementById("card3").classList.add("rotation");
