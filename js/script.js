@@ -99,7 +99,26 @@ setTimeout(function () {
   document.getElementById("card15").classList.remove("python","rotation");
   document.getElementById("card16").classList.remove("python","rotation");
   document.getElementById('unclick').classList.add("hidden");
-}, 5000);
+}, difficolta+500);
+}
+);
+// setto le difficolta
+document.getElementById('facile').addEventListener("click",
+function(){
+  difficolta = 14500;
+  document.getElementById('start').classList.add("hidden");
+}
+);
+document.getElementById('medio').addEventListener("click",
+function(){
+  difficolta = 6500
+  document.getElementById('start').classList.add("hidden");
+}
+)
+document.getElementById('difficile').addEventListener("click",
+function(){
+  difficolta = 4500
+  document.getElementById('start').classList.add("hidden");
 }
 );
 // creo le if ed elif per le opzioni di ogni carta

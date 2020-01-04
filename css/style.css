@@ -11,7 +11,7 @@ body {
 
 .start-game {
   width: 60%;
-  height: 600px;
+  height: 700px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,10 @@ body {
   border: 1px solid white;
   margin-top: 80px;
   background-color: rgba(152, 147, 131, 0.13);
+  position: absolute;
+  z-index: 1;
+  top:-12%;
+  left:20%;
 }
 .rigioca {
   width: 100%;
@@ -26,7 +30,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top:0;
-  z-index: 5;
+  z-index: 9999;
 }
 h3 {
   text-align: center;
